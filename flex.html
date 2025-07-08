@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .container div{
+            border: 2px solid tomato;
+            height: 100px;
+            font-size: 3em;
+        }
+        .container div:nth-child(odd){
+            background-color: lightblue;
+        }
+        .box{
+            font-size: 4em;
+            height: 150px;
+            width: 150px;
+            border: 2px solid slateblue;
+        }
+        .box-container{
+            display: inline-flex;
+        }
+        .user-container{
+            display: flex;
+            justify-content: center;
+        }
+        .user{
+            font-size: 4em;
+            height: 150px;
+            width: 150px;
+            border: 2px solid green;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div class="box-container"></div>
+        <!--.box{$}*6 -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+
+        <div class="user-container"></div>
+        <!--.user{$}*6 -->
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">use-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-6</div>
+
+</body>
+</html>

@@ -3,45 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Flex box</title>
     <style>
-        .container{
+    .container{
+        display: flex;
+        gap: 50px;
+    }
+    .container div{
+        border: 2px solid tomato;
+        height: 150px;
+        width: 150px;
+        font-size: 3em;
+        }
+        .box-container{
             display: flex;
+            gap: 50px;
         }
-        .container div{
-            border: 2px solid tomato;
-            height: 100px;
-            font-size: 3em;
-        }
-        .container div:nth-child(odd){
-            background-color: lightblue;
-        }
+
         .box{
-            font-size: 4em;
+            font-size: 6em;
             height: 150px;
             width: 150px;
             border: 2px solid slateblue;
         }
-        .box-container{
-            display: inline-flex;
+        .user{
+            border: 4px solid blue;
+            height: 150px;
+            width: 150px;
+            font-size: 2em;
+            background-color: skyblue;
         }
         .user-container{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
         }
-        .user{
-            font-size: 4em;
-            height: 150px;
-            width: 150px;
-            border: 2px solid green;
-            margin: 10px;
+        .card-container {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-wrap: wrap;
         }
     </style>
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
 <body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="flex.html">Flex</a></li>
+            <li><a href="center.html">Center</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+    </nav>
+    </header>
     <div class="container">
         <div>1</div>
         <div>2</div>
@@ -50,23 +63,37 @@
         <div>5</div>
         <div>6</div>
     </div>
-    <div class="box-container"></div>
-        <!--.box{$}*6 -->
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
+    <div class="box-container">
+       <div class="box">1</div>
+       <div class="box">2</div>
+       <div class="box">3</div>
+       <div class="box">4</div>
+       <div class="box">5</div>
+       <div class="box">6</div>
+        
+    </div>
 
-        <div class="user-container"></div>
-        <!--.user{$}*6 -->
+    <div class="user-container">
         <div class="user">user-1</div>
         <div class="user">user-2</div>
-        <div class="user">use-3</div>
+        <div class="user">user-3</div>
+    </div>
+
+    <div class="card-container">
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
         <div class="user">user-4</div>
         <div class="user">user-5</div>
         <div class="user">user-6</div>
-
+        <div class="user">user-7</div>
+        <div class="user">user-8</div>
+        <div class="user">user-9</div>
+        <div class="user">user-10</div>
+        <div class="user">user-11</div>
+        <div class="user">user-12</div>
+        <div class="user">user-13</div>
+        <div class="user">user-14</div>
+    </div>
 </body>
 </html>
